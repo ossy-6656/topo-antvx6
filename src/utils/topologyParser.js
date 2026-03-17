@@ -154,7 +154,7 @@ export class TopologyParser {
           name: 'manhattan',
           args: {
             padding: isSwitchToBus ? 1 : 50,
-            startDirections: ['bottom'],
+            startDirections: (parentNode.data.type === 'trafo-three-winding' || parentNode.data.type === 'trafo-dual-winding') && parentNode.data.sub_devices.length > 1 ? ['left', 'right'] : ['bottom'],
             endDirections: ['top']
           },
         },
