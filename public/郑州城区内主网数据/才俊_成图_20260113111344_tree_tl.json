@@ -1,0 +1,2253 @@
+{
+    "code": 1,
+    "message": "动态拓扑解析成功",
+    "root_bus": "7",
+    "substations": [
+        {
+            "station_id": "station_郑州_竹韵站",
+            "station_name": "郑州.竹韵站"
+        },
+        {
+            "station_id": "station_郑州_碧泉站",
+            "station_name": "郑州.碧泉站"
+        },
+        {
+            "station_id": "station_郑州_禄达站",
+            "station_name": "郑州.禄达站"
+        },
+        {
+            "station_id": "station_谢庄站",
+            "station_name": "谢庄站"
+        },
+        {
+            "station_id": "station_才俊站",
+            "station_name": "才俊站"
+        },
+        {
+            "station_id": "station_郑州_中信站",
+            "station_name": "郑州.中信站"
+        },
+        {
+            "station_id": "station_郑州_义通站",
+            "station_name": "郑州.义通站"
+        },
+        {
+            "station_id": "station_郑州_T10站",
+            "station_name": "郑州.T10站"
+        }
+    ],
+    "topology": [
+        {
+            "device_index": "7",
+            "device_type": "bus",
+            "is_virtual": false,
+            "show_type": "bus",
+            "name": "才俊站.230.2",
+            "station": "才俊站",
+            "station_id": "station_才俊站",
+            "vn_kv": 220.0,
+            "sub_devices": [
+                {
+                    "device_index": "0",
+                    "device_type": "trafo-three-winding",
+                    "is_virtual": false,
+                    "show_type": "三绕组三绕组主变",
+                    "hv_bus": "7",
+                    "mv_bus": "8",
+                    "lv_bus": "9",
+                    "name": "才俊站.才#1三绕组主变",
+                    "station": "才俊站",
+                    "station_id": "station_才俊站",
+                    "sn_hv_mva": 240.0,
+                    "sn_mv_mva": 240.0,
+                    "sn_lv_mva": 120.0,
+                    "vn_kv": 220,
+                    "vn_mv_kv": 110,
+                    "vn_lv_kv": 10,
+                    "sub_devices": [
+                        {
+                            "device_index": "8",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "才俊站.115.2",
+                            "station": "才俊站",
+                            "station_id": "station_才俊站",
+                            "vn_kv": 110.0,
+                            "sub_devices": [
+                                {
+                                    "device_index": "32",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "8",
+                                    "element": "300710",
+                                    "name": "Ⅱ才俊竹韵1开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300710",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300710",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "7",
+                                    "device_type": "load",
+                                    "is_virtual": false,
+                                    "show_type": "负荷",
+                                    "bus": "8",
+                                    "ini_p_mw": 0.320625,
+                                    "max_p_mw": 0.320625,
+                                    "name": "才俊站.才俊站/110kV.才俊圃田线",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "sub_devices": []
+                                },
+                                {
+                                    "device_index": "0",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "8",
+                                    "name": "才俊中信线",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "length_km": 1.0,
+                                    "to_bus": "11",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "11",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.中信站.115.2",
+                                            "station": "郑州.中信站",
+                                            "station_id": "station_郑州_中信站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "7",
+                                                    "device_type": "trafo-three-winding",
+                                                    "is_virtual": false,
+                                                    "show_type": "三绕组主变",
+                                                    "hv_bus": "11",
+                                                    "lv_bus": "12",
+                                                    "name": "郑州.中信站.信#1三绕组主变",
+                                                    "station": "郑州.中信站",
+                                                    "station_id": "station_郑州_中信站",
+                                                    "sn_mva": 63.0,
+                                                    "vn_kv": 110,
+                                                    "vn_lv_kv": 10.0,
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "12",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.中信站.10.2",
+                                                            "station": "郑州.中信站",
+                                                            "station_id": "station_郑州_中信站",
+                                                            "vn_kv": 10.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "54",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500000",
+                                                                    "name": "信9开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500000",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500000",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "55",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500004",
+                                                                    "name": "信8开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500004",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500004",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "56",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500013",
+                                                                    "name": "信13开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500013",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500013",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "57",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500017",
+                                                                    "name": "信10开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500017",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500017",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "58",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500059",
+                                                                    "name": "信1开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500059",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500059",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "59",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500301",
+                                                                    "name": "信5开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500301",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500301",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "60",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500455",
+                                                                    "name": "信4开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500455",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500455",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "61",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500585",
+                                                                    "name": "信2开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500585",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500585",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "62",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500619",
+                                                                    "name": "信12开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500619",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500619",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "63",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500710",
+                                                                    "name": "信17开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500710",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500710",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "64",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500736",
+                                                                    "name": "信11开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500736",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500736",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "65",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "12",
+                                                                    "element": "500745",
+                                                                    "name": "信3开关",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "500745",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_500745",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "0",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "12",
+                                                                    "ini_p_mw": -0.0657542,
+                                                                    "max_p_mw": 0.001,
+                                                                    "name": "郑州.中信站.信#1站用变",
+                                                                    "station": "郑州.中信站",
+                                                                    "station_id": "station_郑州_中信站",
+                                                                    "sub_devices": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "1",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "8",
+                                    "name": "才俊义通线",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "length_km": 1.0,
+                                    "to_bus": "13",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "13",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.义通站.115.2",
+                                            "station": "郑州.义通站",
+                                            "station_id": "station_郑州_义通站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "6",
+                                                    "device_type": "trafo-three-winding",
+                                                    "is_virtual": false,
+                                                    "show_type": "三绕组主变",
+                                                    "hv_bus": "13",
+                                                    "lv_bus": "14",
+                                                    "name": "郑州.义通站.义#1三绕组主变",
+                                                    "station": "郑州.义通站",
+                                                    "station_id": "station_郑州_义通站",
+                                                    "sn_mva": 63.0,
+                                                    "vn_kv": 110,
+                                                    "vn_lv_kv": 10.0,
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "14",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.义通站.10.3",
+                                                            "station": "郑州.义通站",
+                                                            "station_id": "station_郑州_义通站",
+                                                            "vn_kv": 10.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "43",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "400000",
+                                                                    "name": "义1开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400000",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400000",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "44",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "400005",
+                                                                    "name": "义3开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400005",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400005",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "45",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "400017",
+                                                                    "name": "义5开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400017",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400017",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "46",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "400030",
+                                                                    "name": "义6开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400030",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400030",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "47",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "400034",
+                                                                    "name": "义11开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400034",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400034",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "48",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "400094",
+                                                                    "name": "义2开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400094",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400094",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "49",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "400400",
+                                                                    "name": "义4开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400400",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400400",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "50",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "400679",
+                                                                    "name": "义7开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400679",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400679",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "51",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "400789",
+                                                                    "name": "义8开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400789",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400789",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "52",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "401066",
+                                                                    "name": "义12开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "401066",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_401066",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "53",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "14",
+                                                                    "element": "401088",
+                                                                    "name": "义9开关",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "401088",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_401088",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "1",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "14",
+                                                                    "ini_p_mw": 0.290329,
+                                                                    "max_p_mw": 0.290329,
+                                                                    "name": "郑州.义通站.义10板(Ⅰ郑州新区污水泵站专用配线)负荷",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "sub_devices": []
+                                                                },
+                                                                {
+                                                                    "device_index": "2",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "14",
+                                                                    "ini_p_mw": 0.0344712,
+                                                                    "max_p_mw": 0.0344712,
+                                                                    "name": "郑州.义通站.义#1站用变",
+                                                                    "station": "郑州.义通站",
+                                                                    "station_id": "station_郑州_义通站",
+                                                                    "sub_devices": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "2",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "8",
+                                    "name": "才俊禄达线",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "length_km": 1.0,
+                                    "to_bus": "5",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "5",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.禄达站.115.3",
+                                            "station": "郑州.禄达站",
+                                            "station_id": "station_郑州_禄达站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "3",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "8",
+                                    "name": "Ⅰ才俊竹韵(才俊-T10)线",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "length_km": 1.0,
+                                    "to_bus": "15",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "15",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.T10站.115.71",
+                                            "station": "郑州.T10站",
+                                            "station_id": "station_郑州_T10站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "4",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "0",
+                                                    "name": "Ⅰ才俊竹韵(竹韵-T10)线",
+                                                    "station": "郑州.竹韵站",
+                                                    "station_id": "station_郑州_竹韵站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "15",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "0",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.竹韵站.115.2",
+                                                            "station": "郑州.竹韵站",
+                                                            "station_id": "station_郑州_竹韵站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "8",
+                                                                    "device_type": "trafo-three-winding",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "三绕组主变",
+                                                                    "hv_bus": "0",
+                                                                    "lv_bus": "2",
+                                                                    "name": "郑州.竹韵站.竹韵#1三绕组主变",
+                                                                    "station": "郑州.竹韵站",
+                                                                    "station_id": "station_郑州_竹韵站",
+                                                                    "sn_mva": 63.0,
+                                                                    "vn_kv": 110,
+                                                                    "vn_lv_kv": 10.0,
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "2",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "郑州.竹韵站.10.2",
+                                                                            "station": "郑州.竹韵站",
+                                                                            "station_id": "station_郑州_竹韵站",
+                                                                            "vn_kv": 10.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "11",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200000",
+                                                                                    "name": "竹韵2开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200000",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200000",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "12",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200077",
+                                                                                    "name": "竹韵4开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200077",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200077",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "13",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200112",
+                                                                                    "name": "竹韵5开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200112",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200112",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "14",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200425",
+                                                                                    "name": "竹韵6开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200425",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200425",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "15",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200473",
+                                                                                    "name": "竹韵10开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200473",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200473",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "16",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200523",
+                                                                                    "name": "竹韵13开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200523",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200523",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "17",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200544",
+                                                                                    "name": "竹韵14开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200544",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200544",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "18",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200564",
+                                                                                    "name": "竹韵7开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200564",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200564",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "19",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200583",
+                                                                                    "name": "竹韵8开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200583",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200583",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "20",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "200930",
+                                                                                    "name": "竹韵12开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200930",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200930",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "21",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "2",
+                                                                                    "element": "201153",
+                                                                                    "name": "竹韵15开关",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "201153",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_201153",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "4",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "2",
+                                                                                    "ini_p_mw": 0.637561,
+                                                                                    "max_p_mw": 0.637561,
+                                                                                    "name": "郑州.竹韵站.竹韵9板(Ⅱ宇通技术中心专用线)负荷",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "sub_devices": []
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "5",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "2",
+                                                                                    "ini_p_mw": 0.0359527,
+                                                                                    "max_p_mw": 0.0359527,
+                                                                                    "name": "郑州.竹韵站.竹韵#1站用变",
+                                                                                    "station": "郑州.竹韵站",
+                                                                                    "station_id": "station_郑州_竹韵站",
+                                                                                    "sub_devices": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "device_index": "5",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "3",
+                                                    "name": "Ⅰ才竹碧泉支线",
+                                                    "station": "郑州.碧泉站",
+                                                    "station_id": "station_郑州_碧泉站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "15",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "3",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.碧泉站.115.2",
+                                                            "station": "郑州.碧泉站",
+                                                            "station_id": "station_郑州_碧泉站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "9",
+                                                                    "device_type": "trafo-three-winding",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "三绕组主变",
+                                                                    "hv_bus": "3",
+                                                                    "lv_bus": "4",
+                                                                    "name": "郑州.碧泉站.碧泉#1三绕组主变",
+                                                                    "station": "郑州.碧泉站",
+                                                                    "station_id": "station_郑州_碧泉站",
+                                                                    "sn_mva": 63.0,
+                                                                    "vn_kv": 110,
+                                                                    "vn_lv_kv": 10.0,
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "4",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "郑州.碧泉站.10.2",
+                                                                            "station": "郑州.碧泉站",
+                                                                            "station_id": "station_郑州_碧泉站",
+                                                                            "vn_kv": 10.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "0",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "100000",
+                                                                                    "name": "碧泉8开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "100000",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_100000",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "1",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "100327",
+                                                                                    "name": "碧泉9开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "100327",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_100327",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "2",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "100403",
+                                                                                    "name": "碧泉10开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "100403",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_100403",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "3",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "100524",
+                                                                                    "name": "碧泉15开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "100524",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_100524",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "4",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "100548",
+                                                                                    "name": "碧泉16开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "100548",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_100548",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "5",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "100592",
+                                                                                    "name": "碧泉7开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "100592",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_100592",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "6",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "100624",
+                                                                                    "name": "碧泉12开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "100624",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_100624",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "7",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "100641",
+                                                                                    "name": "碧泉5开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "100641",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_100641",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "8",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "101135",
+                                                                                    "name": "碧泉2开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "101135",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_101135",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "9",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "101167",
+                                                                                    "name": "碧泉4开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "101167",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_101167",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "10",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "101212",
+                                                                                    "name": "碧泉3开关",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "101212",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_101212",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "6",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "4",
+                                                                                    "ini_p_mw": 0.0135047,
+                                                                                    "max_p_mw": 0.0135047,
+                                                                                    "name": "郑州.碧泉站.碧泉1#1站用变",
+                                                                                    "station": "郑州.碧泉站",
+                                                                                    "station_id": "station_郑州_碧泉站",
+                                                                                    "sub_devices": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "6",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "8",
+                                    "name": "Ⅱ才俊谢庄线",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "length_km": 1.0,
+                                    "to_bus": "6",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "6",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "谢庄站.115.3",
+                                            "station": "谢庄站",
+                                            "station_id": "station_谢庄站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "7",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "8",
+                                    "name": "Ⅱ才俊竹韵(才俊-T10)线",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "length_km": 1.0,
+                                    "to_bus": "16",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "16",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.T10站.115.75",
+                                            "station": "郑州.T10站",
+                                            "station_id": "station_郑州_T10站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "3",
+                                                    "device_type": "load",
+                                                    "is_virtual": false,
+                                                    "show_type": "负荷",
+                                                    "bus": "16",
+                                                    "ini_p_mw": 13.479,
+                                                    "max_p_mw": 13.479,
+                                                    "name": "郑州.T10站.郑州.T10站/110kV.Ⅱ才竹荣威支线",
+                                                    "station": "郑州.T10站",
+                                                    "station_id": "station_郑州_T10站",
+                                                    "sub_devices": []
+                                                },
+                                                {
+                                                    "device_index": "8",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "1",
+                                                    "name": "Ⅱ才俊竹韵(竹韵-T10)线",
+                                                    "station": "郑州.竹韵站",
+                                                    "station_id": "station_郑州_竹韵站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "16",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "1",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.竹韵站.115.3",
+                                                            "station": "郑州.竹韵站",
+                                                            "station_id": "station_郑州_竹韵站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "device_index": "9",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "才俊站.10.2",
+                            "station": "才俊站",
+                            "station_id": "station_才俊站",
+                            "vn_kv": 10.0,
+                            "sub_devices": [
+                                {
+                                    "device_index": "22",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300000",
+                                    "name": "才俊4开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300000",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300000",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "23",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300136",
+                                    "name": "才俊12开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300136",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300136",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "26",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300312",
+                                    "name": "才俊10开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300312",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300312",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "27",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300391",
+                                    "name": "才俊5开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300391",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300391",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "28",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300457",
+                                    "name": "才俊8开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300457",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300457",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "29",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300527",
+                                    "name": "才俊6开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300527",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300527",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "34",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300735",
+                                    "name": "才俊16开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300735",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300735",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "35",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300749",
+                                    "name": "才俊17开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300749",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300749",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "36",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300763",
+                                    "name": "才俊13开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300763",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300763",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "37",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "300799",
+                                    "name": "才俊9开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300799",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300799",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "41",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "9",
+                                    "element": "301019",
+                                    "name": "才俊14开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "301019",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_301019",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "8",
+                                    "device_type": "load",
+                                    "is_virtual": false,
+                                    "show_type": "负荷",
+                                    "bus": "9",
+                                    "ini_p_mw": 0.0886754,
+                                    "max_p_mw": 0.0886754,
+                                    "name": "才俊站.才俊#1站用变",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "sub_devices": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "device_index": "1",
+                    "device_type": "trafo-three-winding",
+                    "is_virtual": false,
+                    "show_type": "三绕组三绕组主变",
+                    "hv_bus": "7",
+                    "mv_bus": "8",
+                    "lv_bus": "10",
+                    "name": "才俊站.才#2三绕组主变",
+                    "station": "才俊站",
+                    "station_id": "station_才俊站",
+                    "sn_hv_mva": 240.0,
+                    "sn_mv_mva": 240.0,
+                    "sn_lv_mva": 120.0,
+                    "vn_kv": 220,
+                    "vn_mv_kv": 110,
+                    "vn_lv_kv": 10,
+                    "sub_devices": [
+                        {
+                            "device_index": "10",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "才俊站.10.3",
+                            "station": "才俊站",
+                            "station_id": "station_才俊站",
+                            "vn_kv": 10.0,
+                            "sub_devices": [
+                                {
+                                    "device_index": "24",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "10",
+                                    "element": "300211",
+                                    "name": "才俊32开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300211",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300211",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "25",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "10",
+                                    "element": "300262",
+                                    "name": "才俊29开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300262",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300262",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "30",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "10",
+                                    "element": "300603",
+                                    "name": "才俊41开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300603",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300603",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "31",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "10",
+                                    "element": "300671",
+                                    "name": "才俊31开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300671",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300671",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "33",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "10",
+                                    "element": "300718",
+                                    "name": "才俊27开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300718",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300718",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "38",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "10",
+                                    "element": "300827",
+                                    "name": "才俊42开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300827",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300827",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "39",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "10",
+                                    "element": "300848",
+                                    "name": "才俊45开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300848",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300848",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "40",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "10",
+                                    "element": "300897",
+                                    "name": "才俊46开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "300897",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_300897",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "42",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "10",
+                                    "element": "301070",
+                                    "name": "才俊43开关",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "301070",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_301070",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "9",
+                                    "device_type": "load",
+                                    "is_virtual": false,
+                                    "show_type": "负荷",
+                                    "bus": "10",
+                                    "ini_p_mw": -0.0655386,
+                                    "max_p_mw": 0.001,
+                                    "name": "才俊站.才俊#2站用变",
+                                    "station": "才俊站",
+                                    "station_id": "station_才俊站",
+                                    "sub_devices": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "total_devices": 174
+}

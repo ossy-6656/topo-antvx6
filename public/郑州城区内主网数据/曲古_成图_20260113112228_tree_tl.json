@@ -1,0 +1,1256 @@
+{
+    "code": 1,
+    "message": "动态拓扑解析成功",
+    "root_bus": "5",
+    "substations": [
+        {
+            "station_id": "station_郑州_绿萝站",
+            "station_name": "郑州.绿萝站"
+        },
+        {
+            "station_id": "station_郑州_金菊站",
+            "station_name": "郑州.金菊站"
+        },
+        {
+            "station_id": "station_庆丰站",
+            "station_name": "庆丰站"
+        },
+        {
+            "station_id": "station_曲古站",
+            "station_name": "曲古站"
+        },
+        {
+            "station_id": "station_郑州_春藤站",
+            "station_name": "郑州.春藤站"
+        },
+        {
+            "station_id": "station_郑州_T10站",
+            "station_name": "郑州.T10站"
+        }
+    ],
+    "topology": [
+        {
+            "device_index": "5",
+            "device_type": "bus",
+            "is_virtual": false,
+            "show_type": "bus",
+            "name": "曲古站.230.2",
+            "station": "曲古站",
+            "station_id": "station_曲古站",
+            "vn_kv": 220.0,
+            "sub_devices": [
+                {
+                    "device_index": "0",
+                    "device_type": "trafo-three-winding",
+                    "is_virtual": false,
+                    "show_type": "三绕组三绕组主变",
+                    "hv_bus": "5",
+                    "mv_bus": "6",
+                    "lv_bus": "7",
+                    "name": "曲古站.曲古#1三绕组主变",
+                    "station": "曲古站",
+                    "station_id": "station_曲古站",
+                    "sn_hv_mva": 240.0,
+                    "sn_mv_mva": 240.0,
+                    "sn_lv_mva": 120.0,
+                    "vn_kv": 220,
+                    "vn_mv_kv": 110,
+                    "vn_lv_kv": 10,
+                    "sub_devices": [
+                        {
+                            "device_index": "6",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "曲古站.115.2",
+                            "station": "曲古站",
+                            "station_id": "station_曲古站",
+                            "vn_kv": 110.0,
+                            "sub_devices": [
+                                {
+                                    "device_index": "3",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "6",
+                                    "name": "Ⅰ曲古金菊线",
+                                    "station": "曲古站",
+                                    "station_id": "station_曲古站",
+                                    "length_km": 1.0,
+                                    "to_bus": "2",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "2",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.金菊站.115.3",
+                                            "station": "郑州.金菊站",
+                                            "station_id": "station_郑州_金菊站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "5",
+                                                    "device_type": "trafo-three-winding",
+                                                    "is_virtual": false,
+                                                    "show_type": "三绕组主变",
+                                                    "hv_bus": "2",
+                                                    "lv_bus": "3",
+                                                    "name": "郑州.金菊站.金菊#1三绕组主变",
+                                                    "station": "郑州.金菊站",
+                                                    "station_id": "station_郑州_金菊站",
+                                                    "sn_mva": 63.0,
+                                                    "vn_kv": 110,
+                                                    "vn_lv_kv": 10.0,
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "3",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.金菊站.10.2",
+                                                            "station": "郑州.金菊站",
+                                                            "station_id": "station_郑州_金菊站",
+                                                            "vn_kv": 10.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "2",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "3",
+                                                                    "element": "200000",
+                                                                    "name": "金菊7开关",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "200000",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_200000",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "3",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "3",
+                                                                    "element": "200029",
+                                                                    "name": "金菊4开关",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "200029",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_200029",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "4",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "3",
+                                                                    "element": "200044",
+                                                                    "name": "金菊10开关",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "200044",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_200044",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "5",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "3",
+                                                                    "element": "200048",
+                                                                    "name": "金菊3开关",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "200048",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_200048",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "6",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "3",
+                                                                    "element": "200487",
+                                                                    "name": "金菊14开关",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "200487",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_200487",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "7",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "3",
+                                                                    "element": "200517",
+                                                                    "name": "金菊5开关",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "200517",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_200517",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "8",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "3",
+                                                                    "element": "200539",
+                                                                    "name": "金菊9开关",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "200539",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_200539",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "9",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "3",
+                                                                    "element": "200556",
+                                                                    "name": "金菊2开关",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "200556",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_200556",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "2",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "3",
+                                                                    "ini_p_mw": 0.0183431,
+                                                                    "max_p_mw": 0.0183431,
+                                                                    "name": "郑州.金菊站.金菊1#1站用变负荷",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "sub_devices": []
+                                                                },
+                                                                {
+                                                                    "device_index": "3",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "3",
+                                                                    "ini_p_mw": 0.401954,
+                                                                    "max_p_mw": 0.401954,
+                                                                    "name": "郑州.金菊站.金菊16(Ⅰ绿梅街三所线)负荷",
+                                                                    "station": "郑州.金菊站",
+                                                                    "station_id": "station_郑州_金菊站",
+                                                                    "sub_devices": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "4",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "6",
+                                    "name": "曲古绿萝线",
+                                    "station": "曲古站",
+                                    "station_id": "station_曲古站",
+                                    "length_km": 1.0,
+                                    "to_bus": "0",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "0",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.绿萝站.115.2",
+                                            "station": "郑州.绿萝站",
+                                            "station_id": "station_郑州_绿萝站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "4",
+                                                    "device_type": "trafo-three-winding",
+                                                    "is_virtual": false,
+                                                    "show_type": "三绕组主变",
+                                                    "hv_bus": "0",
+                                                    "lv_bus": "1",
+                                                    "name": "郑州.绿萝站.绿萝#1三绕组主变",
+                                                    "station": "郑州.绿萝站",
+                                                    "station_id": "station_郑州_绿萝站",
+                                                    "sn_mva": 63.0,
+                                                    "vn_kv": 110,
+                                                    "vn_lv_kv": 10.0,
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "1",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.绿萝站.10.2",
+                                                            "station": "郑州.绿萝站",
+                                                            "station_id": "station_郑州_绿萝站",
+                                                            "vn_kv": 10.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "21",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400000",
+                                                                    "name": "绿萝4开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400000",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400000",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "22",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400106",
+                                                                    "name": "绿萝11开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400106",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400106",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "23",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400213",
+                                                                    "name": "绿萝3开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400213",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400213",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "24",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400299",
+                                                                    "name": "绿萝14开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400299",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400299",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "25",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400368",
+                                                                    "name": "绿萝6开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400368",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400368",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "26",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400560",
+                                                                    "name": "绿萝13开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400560",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400560",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "27",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400597",
+                                                                    "name": "绿萝5开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400597",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400597",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "28",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400672",
+                                                                    "name": "绿萝12开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400672",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400672",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "29",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400764",
+                                                                    "name": "绿萝9开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400764",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400764",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "30",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400811",
+                                                                    "name": "绿萝16开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400811",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400811",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "31",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400862",
+                                                                    "name": "绿萝17开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400862",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400862",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "32",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400939",
+                                                                    "name": "绿萝8开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400939",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400939",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "33",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "1",
+                                                                    "element": "400961",
+                                                                    "name": "绿萝7开关",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "400961",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_400961",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "1",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "1",
+                                                                    "ini_p_mw": 0.0331114,
+                                                                    "max_p_mw": 0.0331114,
+                                                                    "name": "郑州.绿萝站.绿萝15#1站用变",
+                                                                    "station": "郑州.绿萝站",
+                                                                    "station_id": "station_郑州_绿萝站",
+                                                                    "sub_devices": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "device_index": "1",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "0",
+                                                    "name": "庆丰绿萝(绿萝-T10)线",
+                                                    "station": "郑州.绿萝站",
+                                                    "station_id": "station_郑州_绿萝站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "10",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "10",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.T10站.115.46",
+                                                            "station": "郑州.T10站",
+                                                            "station_id": "station_郑州_T10站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "0",
+                                                                    "device_type": "ac_line",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "线路",
+                                                                    "from_bus": "4",
+                                                                    "name": "庆丰绿萝(庆丰-T10)线",
+                                                                    "station": "庆丰站",
+                                                                    "station_id": "station_庆丰站",
+                                                                    "length_km": 1.0,
+                                                                    "to_bus": "10",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "4",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "庆丰站.115.3",
+                                                                            "station": "庆丰站",
+                                                                            "station_id": "station_庆丰站",
+                                                                            "vn_kv": 110.0,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "2",
+                                                                    "device_type": "ac_line",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "线路",
+                                                                    "from_bus": "8",
+                                                                    "name": "庆绿春支线",
+                                                                    "station": "郑州.春藤站",
+                                                                    "station_id": "station_郑州_春藤站",
+                                                                    "length_km": 1.0,
+                                                                    "to_bus": "10",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "8",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "郑州.春藤站.115.2",
+                                                                            "station": "郑州.春藤站",
+                                                                            "station_id": "station_郑州_春藤站",
+                                                                            "vn_kv": 110.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "3",
+                                                                                    "device_type": "trafo-three-winding",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "三绕组主变",
+                                                                                    "hv_bus": "8",
+                                                                                    "lv_bus": "9",
+                                                                                    "name": "郑州.春藤站.春#1三绕组主变",
+                                                                                    "station": "郑州.春藤站",
+                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                    "sn_mva": 50.0,
+                                                                                    "vn_kv": 110,
+                                                                                    "vn_lv_kv": 10.0,
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "9",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "郑州.春藤站.10.3",
+                                                                                            "station": "郑州.春藤站",
+                                                                                            "station_id": "station_郑州_春藤站",
+                                                                                            "vn_kv": 10.0,
+                                                                                            "sub_devices": [
+                                                                                                {
+                                                                                                    "device_index": "10",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "300000",
+                                                                                                    "name": "春3开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "300000",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_300000",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "11",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "300057",
+                                                                                                    "name": "春10开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "300057",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_300057",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "12",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "300259",
+                                                                                                    "name": "春4开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "300259",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_300259",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "13",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "300434",
+                                                                                                    "name": "春6开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "300434",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_300434",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "14",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "300582",
+                                                                                                    "name": "春5开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "300582",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_300582",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "15",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "300637",
+                                                                                                    "name": "春9开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "300637",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_300637",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "16",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "300666",
+                                                                                                    "name": "春17开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "300666",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_300666",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "17",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "300703",
+                                                                                                    "name": "春7开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "300703",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_300703",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "18",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "301070",
+                                                                                                    "name": "春11开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "301070",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_301070",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "19",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "301289",
+                                                                                                    "name": "春8开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "301289",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_301289",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "20",
+                                                                                                    "device_type": "switch-liaison",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "开关",
+                                                                                                    "bus": "9",
+                                                                                                    "element": "301360",
+                                                                                                    "name": "春1开关",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "et": "b",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "301360",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_301360",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "0",
+                                                                                                    "device_type": "load",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "负荷",
+                                                                                                    "bus": "9",
+                                                                                                    "ini_p_mw": 0.022185,
+                                                                                                    "max_p_mw": 0.022185,
+                                                                                                    "name": "郑州.春藤站.春12#1站用变",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "sub_devices": []
+                                                                                                },
+                                                                                                {
+                                                                                                    "device_index": "5",
+                                                                                                    "device_type": "ac_line",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "线路",
+                                                                                                    "from_bus": "9",
+                                                                                                    "name": "dkx_conline_301359",
+                                                                                                    "station": "郑州.春藤站",
+                                                                                                    "station_id": "station_郑州_春藤站",
+                                                                                                    "length_km": 0.1,
+                                                                                                    "to_bus": "301359",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "301359",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "bus_301359",
+                                                                                                            "station": "",
+                                                                                                            "station_id": "",
+                                                                                                            "vn_kv": null,
+                                                                                                            "sub_devices": []
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "device_index": "7",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "曲古站.10.2",
+                            "station": "曲古站",
+                            "station_id": "station_曲古站",
+                            "vn_kv": 10.0,
+                            "sub_devices": [
+                                {
+                                    "device_index": "0",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "7",
+                                    "element": "100000",
+                                    "name": "曲古21开关",
+                                    "station": "曲古站",
+                                    "station_id": "station_曲古站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "100000",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_100000",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "1",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "7",
+                                    "element": "100040",
+                                    "name": "曲古22开关",
+                                    "station": "曲古站",
+                                    "station_id": "station_曲古站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "100040",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_100040",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "4",
+                                    "device_type": "load",
+                                    "is_virtual": false,
+                                    "show_type": "负荷",
+                                    "bus": "7",
+                                    "ini_p_mw": 0.519214,
+                                    "max_p_mw": 0.519214,
+                                    "name": "曲古站.曲古20板(Ⅱ金柏路一所线)负荷",
+                                    "station": "曲古站",
+                                    "station_id": "station_曲古站",
+                                    "sub_devices": []
+                                },
+                                {
+                                    "device_index": "5",
+                                    "device_type": "load",
+                                    "is_virtual": false,
+                                    "show_type": "负荷",
+                                    "bus": "7",
+                                    "ini_p_mw": 0.074962,
+                                    "max_p_mw": 0.074962,
+                                    "name": "曲古站.曲古2板#1接地变负荷",
+                                    "station": "曲古站",
+                                    "station_id": "station_曲古站",
+                                    "sub_devices": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "total_devices": 96
+}

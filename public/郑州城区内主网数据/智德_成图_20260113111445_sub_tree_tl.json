@@ -1,0 +1,560 @@
+{
+    "code": 1,
+    "message": "动态拓扑解析成功",
+    "root_bus": "100000",
+    "substations": [
+        {
+            "station_id": "station_郑州_图强站",
+            "station_name": "郑州.图强站"
+        },
+        {
+            "station_id": "station_郑州_牛砦站",
+            "station_name": "郑州.牛砦站"
+        },
+        {
+            "station_id": "station_郑州_卧龙站",
+            "station_name": "郑州.卧龙站"
+        },
+        {
+            "station_id": "station_智德站",
+            "station_name": "智德站"
+        },
+        {
+            "station_id": "station_郑州_秦岭站",
+            "station_name": "郑州.秦岭站"
+        },
+        {
+            "station_id": "station_郑州_冉屯站",
+            "station_name": "郑州.冉屯站"
+        },
+        {
+            "station_id": "station_郑州_丁香站",
+            "station_name": "郑州.丁香站"
+        },
+        {
+            "station_id": "station_郑州_颍河站",
+            "station_name": "郑州.颍河站"
+        }
+    ],
+    "topology": [
+        {
+            "device_index": "100000",
+            "device_type": "bus",
+            "is_virtual": false,
+            "show_type": "bus",
+            "name": "10kV图7板中国人民解放军第一五三中心医院专用线_0",
+            "station": "郑州.图强站",
+            "station_id": "station_郑州_图强站",
+            "vn_kv": 10.0,
+            "sub_devices": [
+                {
+                    "device_index": "100001",
+                    "device_type": "switch-liaison",
+                    "is_virtual": false,
+                    "show_type": "开关",
+                    "bus": "100000",
+                    "element": "100007",
+                    "name": "图7开关",
+                    "station": "郑州.图强站",
+                    "station_id": "station_郑州_图强站",
+                    "et": "b",
+                    "sub_devices": [
+                        {
+                            "device_index": "100007",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "10kV图7板中国人民解放军第一五三中心医院专用线_F68",
+                            "station": "郑州.图强站",
+                            "station_id": "station_郑州_图强站",
+                            "vn_kv": 10.0,
+                            "sub_devices": [
+                                {
+                                    "device_index": "100000",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "100007",
+                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                    "station": "郑州.图强站",
+                                    "station_id": "station_郑州_图强站",
+                                    "length_km": 0.1,
+                                    "to_bus": "100001",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "100001",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "10kV图7板中国人民解放军第一五三中心医院专用线_F109",
+                                            "station": "郑州.图强站",
+                                            "station_id": "station_郑州_图强站",
+                                            "vn_kv": 10.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "100001",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "100001",
+                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                    "station": "郑州.图强站",
+                                                    "station_id": "station_郑州_图强站",
+                                                    "length_km": 0.1,
+                                                    "to_bus": "100002",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "100002",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "10kV图7板中国人民解放军第一五三中心医院专用线_F110",
+                                                            "station": "郑州.图强站",
+                                                            "station_id": "station_郑州_图强站",
+                                                            "vn_kv": 10.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "100002",
+                                                                    "device_type": "ac_line",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "线路",
+                                                                    "from_bus": "100002",
+                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                    "station": "郑州.图强站",
+                                                                    "station_id": "station_郑州_图强站",
+                                                                    "length_km": 0.1,
+                                                                    "to_bus": "100003",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "100003",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "10kV图7板中国人民解放军第一五三中心医院专用线_F111",
+                                                                            "station": "郑州.图强站",
+                                                                            "station_id": "station_郑州_图强站",
+                                                                            "vn_kv": 10.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "100003",
+                                                                                    "device_type": "ac_line",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "线路",
+                                                                                    "from_bus": "100003",
+                                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                                    "station": "郑州.图强站",
+                                                                                    "station_id": "station_郑州_图强站",
+                                                                                    "length_km": 0.1,
+                                                                                    "to_bus": "100004",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "100004",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "10kV图7板中国人民解放军第一五三中心医院专用线_F112",
+                                                                                            "station": "郑州.图强站",
+                                                                                            "station_id": "station_郑州_图强站",
+                                                                                            "vn_kv": 10.0,
+                                                                                            "sub_devices": [
+                                                                                                {
+                                                                                                    "device_index": "100004",
+                                                                                                    "device_type": "ac_line",
+                                                                                                    "is_virtual": false,
+                                                                                                    "show_type": "线路",
+                                                                                                    "from_bus": "100004",
+                                                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                                                    "station": "郑州.图强站",
+                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                    "length_km": 0.1,
+                                                                                                    "to_bus": "100005",
+                                                                                                    "sub_devices": [
+                                                                                                        {
+                                                                                                            "device_index": "100005",
+                                                                                                            "device_type": "bus",
+                                                                                                            "is_virtual": false,
+                                                                                                            "show_type": "bus",
+                                                                                                            "name": "10kV图7板中国人民解放军第一五三中心医院专用线_F113",
+                                                                                                            "station": "郑州.图强站",
+                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                            "vn_kv": 10.0,
+                                                                                                            "sub_devices": [
+                                                                                                                {
+                                                                                                                    "device_index": "100005",
+                                                                                                                    "device_type": "ac_line",
+                                                                                                                    "is_virtual": false,
+                                                                                                                    "show_type": "线路",
+                                                                                                                    "from_bus": "100005",
+                                                                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                                                                    "station": "郑州.图强站",
+                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                    "length_km": 0.1,
+                                                                                                                    "to_bus": "100006",
+                                                                                                                    "sub_devices": [
+                                                                                                                        {
+                                                                                                                            "device_index": "100006",
+                                                                                                                            "device_type": "bus",
+                                                                                                                            "is_virtual": false,
+                                                                                                                            "show_type": "bus",
+                                                                                                                            "name": "10kV图7板中国人民解放军第一五三中心医院专用线_F114",
+                                                                                                                            "station": "郑州.图强站",
+                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                            "vn_kv": 10.0,
+                                                                                                                            "sub_devices": [
+                                                                                                                                {
+                                                                                                                                    "device_index": "100000",
+                                                                                                                                    "device_type": "switch-liaison",
+                                                                                                                                    "is_virtual": false,
+                                                                                                                                    "show_type": "开关",
+                                                                                                                                    "bus": "100006",
+                                                                                                                                    "element": "100015",
+                                                                                                                                    "name": "中心医院1",
+                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                    "et": "b",
+                                                                                                                                    "sub_devices": [
+                                                                                                                                        {
+                                                                                                                                            "device_index": "100015",
+                                                                                                                                            "device_type": "bus",
+                                                                                                                                            "is_virtual": false,
+                                                                                                                                            "show_type": "bus",
+                                                                                                                                            "name": "10KV图37板一五三中心医院专用线_F171.F105",
+                                                                                                                                            "station": "郑州.图强站",
+                                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                                            "vn_kv": 10.0,
+                                                                                                                                            "sub_devices": [
+                                                                                                                                                {
+                                                                                                                                                    "device_index": "100002",
+                                                                                                                                                    "device_type": "switch-liaison",
+                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                    "show_type": "开关",
+                                                                                                                                                    "bus": "100014",
+                                                                                                                                                    "element": "100015",
+                                                                                                                                                    "name": "中心医院9",
+                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                    "et": "b",
+                                                                                                                                                    "sub_devices": [
+                                                                                                                                                        {
+                                                                                                                                                            "device_index": "100014",
+                                                                                                                                                            "device_type": "bus",
+                                                                                                                                                            "is_virtual": false,
+                                                                                                                                                            "show_type": "bus",
+                                                                                                                                                            "name": "10KV图37板一五三中心医院专用线_F114",
+                                                                                                                                                            "station": "郑州.图强站",
+                                                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                                                            "vn_kv": 10.0,
+                                                                                                                                                            "sub_devices": [
+                                                                                                                                                                {
+                                                                                                                                                                    "device_index": "100011",
+                                                                                                                                                                    "device_type": "ac_line",
+                                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                                    "show_type": "线路",
+                                                                                                                                                                    "from_bus": "100013",
+                                                                                                                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                                    "length_km": 0.1,
+                                                                                                                                                                    "to_bus": "100014",
+                                                                                                                                                                    "sub_devices": [
+                                                                                                                                                                        {
+                                                                                                                                                                            "device_index": "100013",
+                                                                                                                                                                            "device_type": "bus",
+                                                                                                                                                                            "is_virtual": false,
+                                                                                                                                                                            "show_type": "bus",
+                                                                                                                                                                            "name": "10KV图37板一五三中心医院专用线_F113",
+                                                                                                                                                                            "station": "郑州.图强站",
+                                                                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                                                                            "vn_kv": 10.0,
+                                                                                                                                                                            "sub_devices": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "device_index": "100010",
+                                                                                                                                                                                    "device_type": "ac_line",
+                                                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                                                    "show_type": "线路",
+                                                                                                                                                                                    "from_bus": "100012",
+                                                                                                                                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                                                    "length_km": 0.1,
+                                                                                                                                                                                    "to_bus": "100013",
+                                                                                                                                                                                    "sub_devices": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "device_index": "100012",
+                                                                                                                                                                                            "device_type": "bus",
+                                                                                                                                                                                            "is_virtual": false,
+                                                                                                                                                                                            "show_type": "bus",
+                                                                                                                                                                                            "name": "10KV图37板一五三中心医院专用线_F112",
+                                                                                                                                                                                            "station": "郑州.图强站",
+                                                                                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                                                                                            "vn_kv": 10.0,
+                                                                                                                                                                                            "sub_devices": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "device_index": "100009",
+                                                                                                                                                                                                    "device_type": "ac_line",
+                                                                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                                                                    "show_type": "线路",
+                                                                                                                                                                                                    "from_bus": "100011",
+                                                                                                                                                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                    "length_km": 0.1,
+                                                                                                                                                                                                    "to_bus": "100012",
+                                                                                                                                                                                                    "sub_devices": [
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "device_index": "100011",
+                                                                                                                                                                                                            "device_type": "bus",
+                                                                                                                                                                                                            "is_virtual": false,
+                                                                                                                                                                                                            "show_type": "bus",
+                                                                                                                                                                                                            "name": "10KV图37板一五三中心医院专用线_F111",
+                                                                                                                                                                                                            "station": "郑州.图强站",
+                                                                                                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                            "vn_kv": 10.0,
+                                                                                                                                                                                                            "sub_devices": [
+                                                                                                                                                                                                                {
+                                                                                                                                                                                                                    "device_index": "100008",
+                                                                                                                                                                                                                    "device_type": "ac_line",
+                                                                                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                                                                                    "show_type": "线路",
+                                                                                                                                                                                                                    "from_bus": "100010",
+                                                                                                                                                                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                                    "length_km": 0.1,
+                                                                                                                                                                                                                    "to_bus": "100011",
+                                                                                                                                                                                                                    "sub_devices": [
+                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                            "device_index": "100010",
+                                                                                                                                                                                                                            "device_type": "bus",
+                                                                                                                                                                                                                            "is_virtual": false,
+                                                                                                                                                                                                                            "show_type": "bus",
+                                                                                                                                                                                                                            "name": "10KV图37板一五三中心医院专用线_F110",
+                                                                                                                                                                                                                            "station": "郑州.图强站",
+                                                                                                                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                                            "vn_kv": 10.0,
+                                                                                                                                                                                                                            "sub_devices": [
+                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                    "device_index": "100007",
+                                                                                                                                                                                                                                    "device_type": "ac_line",
+                                                                                                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                                                                                                    "show_type": "线路",
+                                                                                                                                                                                                                                    "from_bus": "100009",
+                                                                                                                                                                                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                                                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                                                    "length_km": 0.1,
+                                                                                                                                                                                                                                    "to_bus": "100010",
+                                                                                                                                                                                                                                    "sub_devices": [
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "device_index": "100009",
+                                                                                                                                                                                                                                            "device_type": "bus",
+                                                                                                                                                                                                                                            "is_virtual": false,
+                                                                                                                                                                                                                                            "show_type": "bus",
+                                                                                                                                                                                                                                            "name": "10KV图37板一五三中心医院专用线_F109",
+                                                                                                                                                                                                                                            "station": "郑州.图强站",
+                                                                                                                                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                                                            "vn_kv": 10.0,
+                                                                                                                                                                                                                                            "sub_devices": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                    "device_index": "100006",
+                                                                                                                                                                                                                                                    "device_type": "ac_line",
+                                                                                                                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                                                                                                                    "show_type": "线路",
+                                                                                                                                                                                                                                                    "from_bus": "100016",
+                                                                                                                                                                                                                                                    "name": "郑州110kV图强变电站-中国人民解放军第一五三中心医院配电室",
+                                                                                                                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                                                                    "length_km": 0.1,
+                                                                                                                                                                                                                                                    "to_bus": "100009",
+                                                                                                                                                                                                                                                    "sub_devices": [
+                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                            "device_index": "100016",
+                                                                                                                                                                                                                                                            "device_type": "bus",
+                                                                                                                                                                                                                                                            "is_virtual": false,
+                                                                                                                                                                                                                                                            "show_type": "bus",
+                                                                                                                                                                                                                                                            "name": "10KV图37板一五三中心医院专用线_F68",
+                                                                                                                                                                                                                                                            "station": "郑州.图强站",
+                                                                                                                                                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                                                                            "vn_kv": 10.0,
+                                                                                                                                                                                                                                                            "sub_devices": [
+                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                    "device_index": "100003",
+                                                                                                                                                                                                                                                                    "device_type": "switch-liaison",
+                                                                                                                                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                                                                                                                                    "show_type": "开关",
+                                                                                                                                                                                                                                                                    "bus": "100008",
+                                                                                                                                                                                                                                                                    "element": "100016",
+                                                                                                                                                                                                                                                                    "name": "图37开关",
+                                                                                                                                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                                                                                    "et": "b",
+                                                                                                                                                                                                                                                                    "sub_devices": [
+                                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                                            "device_index": "100008",
+                                                                                                                                                                                                                                                                            "device_type": "bus",
+                                                                                                                                                                                                                                                                            "is_virtual": false,
+                                                                                                                                                                                                                                                                            "show_type": "bus",
+                                                                                                                                                                                                                                                                            "name": "10KV图37板一五三中心医院专用线_0",
+                                                                                                                                                                                                                                                                            "station": "郑州.图强站",
+                                                                                                                                                                                                                                                                            "station_id": "station_郑州_图强站",
+                                                                                                                                                                                                                                                                            "vn_kv": 10.0,
+                                                                                                                                                                                                                                                                            "sub_devices": []
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            ]
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    ]
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        }
+                                                                                                                                                                                    ]
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        }
+                                                                                                                                                                    ]
+                                                                                                                                                                }
+                                                                                                                                                            ]
+                                                                                                                                                        }
+                                                                                                                                                    ]
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "device_index": "100000",
+                                                                                                                                                    "device_type": "load",
+                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                    "show_type": "负荷",
+                                                                                                                                                    "bus": "100015",
+                                                                                                                                                    "ini_p_mw": 0.01114745308310992,
+                                                                                                                                                    "max_p_mw": 0.63,
+                                                                                                                                                    "name": "中国人民解放军联勤保障部队第九八八医院5#专变",
+                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                    "sub_devices": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "device_index": "100001",
+                                                                                                                                                    "device_type": "load",
+                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                    "show_type": "负荷",
+                                                                                                                                                    "bus": "100015",
+                                                                                                                                                    "ini_p_mw": 0.01114745308310992,
+                                                                                                                                                    "max_p_mw": 0.63,
+                                                                                                                                                    "name": "中国人民解放军第一五三中心医院7#专变",
+                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                    "sub_devices": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "device_index": "100002",
+                                                                                                                                                    "device_type": "load",
+                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                    "show_type": "负荷",
+                                                                                                                                                    "bus": "100015",
+                                                                                                                                                    "ini_p_mw": 0.01769436997319035,
+                                                                                                                                                    "max_p_mw": 1.0,
+                                                                                                                                                    "name": "中国人民解放军第一五三中心医院6#专变",
+                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                    "sub_devices": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "device_index": "100003",
+                                                                                                                                                    "device_type": "load",
+                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                    "show_type": "负荷",
+                                                                                                                                                    "bus": "100015",
+                                                                                                                                                    "ini_p_mw": 0.01769436997319035,
+                                                                                                                                                    "max_p_mw": 1.0,
+                                                                                                                                                    "name": "中国人民解放军第一五三中心医院3#专变",
+                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                    "sub_devices": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "device_index": "100004",
+                                                                                                                                                    "device_type": "load",
+                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                    "show_type": "负荷",
+                                                                                                                                                    "bus": "100015",
+                                                                                                                                                    "ini_p_mw": 0.01769436997319035,
+                                                                                                                                                    "max_p_mw": 1.0,
+                                                                                                                                                    "name": "中国人民解放军第一五三中心医院4#专变",
+                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                    "sub_devices": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "device_index": "100005",
+                                                                                                                                                    "device_type": "load",
+                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                    "show_type": "负荷",
+                                                                                                                                                    "bus": "100015",
+                                                                                                                                                    "ini_p_mw": 0.02831099195710456,
+                                                                                                                                                    "max_p_mw": 1.6,
+                                                                                                                                                    "name": "中国人民解放军第一五三中心医院1#专变",
+                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                    "sub_devices": []
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "device_index": "100006",
+                                                                                                                                                    "device_type": "load",
+                                                                                                                                                    "is_virtual": false,
+                                                                                                                                                    "show_type": "负荷",
+                                                                                                                                                    "bus": "100015",
+                                                                                                                                                    "ini_p_mw": 0.02831099195710456,
+                                                                                                                                                    "max_p_mw": 1.6,
+                                                                                                                                                    "name": "中国人民解放军第一五三中心医院2#专变",
+                                                                                                                                                    "station": "郑州.图强站",
+                                                                                                                                                    "station_id": "station_郑州_图强站",
+                                                                                                                                                    "sub_devices": []
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "total_devices": 40
+}

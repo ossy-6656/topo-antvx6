@@ -1,0 +1,1239 @@
+{
+    "code": 1,
+    "message": "动态拓扑解析成功",
+    "root_bus": "0",
+    "substations": [
+        {
+            "station_id": "station_原武站",
+            "station_name": "原武站"
+        },
+        {
+            "station_id": "station_郑州_坤泰站",
+            "station_name": "郑州.坤泰站"
+        },
+        {
+            "station_id": "station_郑州_T10站",
+            "station_name": "郑州.T10站"
+        },
+        {
+            "station_id": "station_郑州_前程站",
+            "station_name": "郑州.前程站"
+        },
+        {
+            "station_id": "station_郑州_香樟站",
+            "station_name": "郑州.香樟站"
+        }
+    ],
+    "topology": [
+        {
+            "device_index": "0",
+            "device_type": "bus",
+            "is_virtual": false,
+            "show_type": "bus",
+            "name": "原武站.230.2",
+            "station": "原武站",
+            "station_id": "station_原武站",
+            "vn_kv": 220.0,
+            "sub_devices": [
+                {
+                    "device_index": "0",
+                    "device_type": "trafo-three-winding",
+                    "is_virtual": false,
+                    "show_type": "三绕组三绕组主变",
+                    "hv_bus": "0",
+                    "mv_bus": "1",
+                    "lv_bus": "2",
+                    "name": "原武站.原#1三绕组主变",
+                    "station": "原武站",
+                    "station_id": "station_原武站",
+                    "sn_hv_mva": 240.0,
+                    "sn_mv_mva": 240.0,
+                    "sn_lv_mva": 120.0,
+                    "vn_kv": 220,
+                    "vn_mv_kv": 110,
+                    "vn_lv_kv": 10,
+                    "sub_devices": [
+                        {
+                            "device_index": "1",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "原武站.115.2",
+                            "station": "原武站",
+                            "station_id": "station_原武站",
+                            "vn_kv": 110.0,
+                            "sub_devices": [
+                                {
+                                    "device_index": "5",
+                                    "device_type": "load",
+                                    "is_virtual": false,
+                                    "show_type": "负荷",
+                                    "bus": "1",
+                                    "ini_p_mw": 3.63153,
+                                    "max_p_mw": 3.63153,
+                                    "name": "原武站.原武站/110kV.原武仲达线",
+                                    "station": "原武站",
+                                    "station_id": "station_原武站",
+                                    "sub_devices": []
+                                },
+                                {
+                                    "device_index": "0",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "1",
+                                    "name": "Ⅰ原武前程线",
+                                    "station": "原武站",
+                                    "station_id": "station_原武站",
+                                    "length_km": 1.0,
+                                    "to_bus": "7",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "7",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.前程站.115.2",
+                                            "station": "郑州.前程站",
+                                            "station_id": "station_郑州_前程站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "5",
+                                                    "device_type": "trafo-three-winding",
+                                                    "is_virtual": false,
+                                                    "show_type": "三绕组主变",
+                                                    "hv_bus": "7",
+                                                    "lv_bus": "8",
+                                                    "name": "郑州.前程站.前#1三绕组主变",
+                                                    "station": "郑州.前程站",
+                                                    "station_id": "station_郑州_前程站",
+                                                    "sn_mva": 50.0,
+                                                    "vn_kv": 110,
+                                                    "vn_lv_kv": 10.0,
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "8",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.前程站.10.2",
+                                                            "station": "郑州.前程站",
+                                                            "station_id": "station_郑州_前程站",
+                                                            "vn_kv": 10.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "25",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300000",
+                                                                    "name": "前8开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300000",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300000",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "26",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300269",
+                                                                    "name": "前3开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300269",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300269",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "27",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300314",
+                                                                    "name": "前16开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300314",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300314",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "28",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300406",
+                                                                    "name": "前15开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300406",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300406",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "29",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300452",
+                                                                    "name": "前6开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300452",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300452",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "30",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300526",
+                                                                    "name": "前4开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300526",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300526",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "31",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300642",
+                                                                    "name": "前2开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300642",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300642",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "32",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300837",
+                                                                    "name": "前11开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300837",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300837",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "33",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300848",
+                                                                    "name": "前10开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300848",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300848",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "34",
+                                                                    "device_type": "switch-liaison",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "开关",
+                                                                    "bus": "8",
+                                                                    "element": "300856",
+                                                                    "name": "前5开关",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "et": "b",
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "300856",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "bus_300856",
+                                                                            "station": "",
+                                                                            "station_id": "",
+                                                                            "vn_kv": null,
+                                                                            "sub_devices": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "3",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "8",
+                                                                    "ini_p_mw": 7.84793,
+                                                                    "max_p_mw": 7.84793,
+                                                                    "name": "郑州.前程站.前2板(前白线)负荷",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "sub_devices": []
+                                                                },
+                                                                {
+                                                                    "device_index": "4",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "8",
+                                                                    "ini_p_mw": 0.668774,
+                                                                    "max_p_mw": 0.668774,
+                                                                    "name": "郑州.前程站.前1#1接地变",
+                                                                    "station": "郑州.前程站",
+                                                                    "station_id": "station_郑州_前程站",
+                                                                    "sub_devices": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "2",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "1",
+                                    "name": "原武坤泰(原武-T10)线",
+                                    "station": "原武站",
+                                    "station_id": "station_原武站",
+                                    "length_km": 1.0,
+                                    "to_bus": "6",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "6",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.T10站.115.78",
+                                            "station": "郑州.T10站",
+                                            "station_id": "station_郑州_T10站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "1",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "9",
+                                                    "name": "原坤香樟支线",
+                                                    "station": "郑州.香樟站",
+                                                    "station_id": "station_郑州_香樟站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "6",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "9",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.香樟站.115.3",
+                                                            "station": "郑州.香樟站",
+                                                            "station_id": "station_郑州_香樟站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "device_index": "3",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "3",
+                                                    "name": "原武坤泰(坤泰-T10)线",
+                                                    "station": "郑州.坤泰站",
+                                                    "station_id": "station_郑州_坤泰站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "6",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "3",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.坤泰站.115.2",
+                                                            "station": "郑州.坤泰站",
+                                                            "station_id": "station_郑州_坤泰站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "3",
+                                                                    "device_type": "trafo-three-winding",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "三绕组主变",
+                                                                    "hv_bus": "3",
+                                                                    "lv_bus": "5",
+                                                                    "name": "郑州.坤泰站.坤#1三绕组主变",
+                                                                    "station": "郑州.坤泰站",
+                                                                    "station_id": "station_郑州_坤泰站",
+                                                                    "sn_mva": 50.0,
+                                                                    "vn_kv": 110,
+                                                                    "vn_lv_kv": 10.0,
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "5",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "郑州.坤泰站.10.3",
+                                                                            "station": "郑州.坤泰站",
+                                                                            "station_id": "station_郑州_坤泰站",
+                                                                            "vn_kv": 10.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "5",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "200314",
+                                                                                    "name": "坤12开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200314",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200314",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "7",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "200519",
+                                                                                    "name": "坤6开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200519",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200519",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "8",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "200745",
+                                                                                    "name": "坤15开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200745",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200745",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "9",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "200834",
+                                                                                    "name": "坤11开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200834",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200834",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "12",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "201182",
+                                                                                    "name": "坤13开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "201182",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_201182",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "14",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "201519",
+                                                                                    "name": "坤7开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "201519",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_201519",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "18",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "201758",
+                                                                                    "name": "坤9开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "201758",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_201758",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "19",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "202093",
+                                                                                    "name": "坤4开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "202093",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_202093",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "20",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "202246",
+                                                                                    "name": "坤5开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "202246",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_202246",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "21",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "202387",
+                                                                                    "name": "坤16开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "202387",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_202387",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "24",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "5",
+                                                                                    "element": "202643",
+                                                                                    "name": "坤8开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "202643",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_202643",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "0",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "5",
+                                                                                    "ini_p_mw": -3.27516,
+                                                                                    "max_p_mw": 0.001,
+                                                                                    "name": "郑州.坤泰站.坤10板(Ⅱ华强线)负荷",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "sub_devices": []
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "1",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "5",
+                                                                                    "ini_p_mw": -0.00825295,
+                                                                                    "max_p_mw": 0.001,
+                                                                                    "name": "郑州.坤泰站.坤#1接地变",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "sub_devices": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "4",
+                                                                    "device_type": "trafo-three-winding",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "三绕组主变",
+                                                                    "hv_bus": "3",
+                                                                    "lv_bus": "4",
+                                                                    "name": "郑州.坤泰站.坤#2三绕组主变",
+                                                                    "station": "郑州.坤泰站",
+                                                                    "station_id": "station_郑州_坤泰站",
+                                                                    "sn_mva": 50.0,
+                                                                    "vn_kv": 110,
+                                                                    "vn_lv_kv": 10.0,
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "4",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "郑州.坤泰站.10.2",
+                                                                            "station": "郑州.坤泰站",
+                                                                            "station_id": "station_郑州_坤泰站",
+                                                                            "vn_kv": 10.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "4",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "200000",
+                                                                                    "name": "坤39开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200000",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200000",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "6",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "200388",
+                                                                                    "name": "坤21开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200388",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200388",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "10",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "200964",
+                                                                                    "name": "坤36开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "200964",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_200964",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "11",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "201120",
+                                                                                    "name": "坤34开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "201120",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_201120",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "13",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "201317",
+                                                                                    "name": "坤37开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "201317",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_201317",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "15",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "201541",
+                                                                                    "name": "坤24开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "201541",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_201541",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "16",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "201554",
+                                                                                    "name": "坤26开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "201554",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_201554",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "17",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "201641",
+                                                                                    "name": "坤25开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "201641",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_201641",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "22",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "202595",
+                                                                                    "name": "坤35开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "202595",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_202595",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "23",
+                                                                                    "device_type": "switch-liaison",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "开关",
+                                                                                    "bus": "4",
+                                                                                    "element": "202618",
+                                                                                    "name": "坤38开关",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "et": "b",
+                                                                                    "sub_devices": [
+                                                                                        {
+                                                                                            "device_index": "202618",
+                                                                                            "device_type": "bus",
+                                                                                            "is_virtual": false,
+                                                                                            "show_type": "bus",
+                                                                                            "name": "bus_202618",
+                                                                                            "station": "",
+                                                                                            "station_id": "",
+                                                                                            "vn_kv": null,
+                                                                                            "sub_devices": []
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "2",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "4",
+                                                                                    "ini_p_mw": 0.0164226,
+                                                                                    "max_p_mw": 0.0164226,
+                                                                                    "name": "郑州.坤泰站.坤#2接地变",
+                                                                                    "station": "郑州.坤泰站",
+                                                                                    "station_id": "station_郑州_坤泰站",
+                                                                                    "sub_devices": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "device_index": "2",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "原武站.10.2",
+                            "station": "原武站",
+                            "station_id": "station_原武站",
+                            "vn_kv": 10.0,
+                            "sub_devices": [
+                                {
+                                    "device_index": "0",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "2",
+                                    "element": "100000",
+                                    "name": "原武17开关",
+                                    "station": "原武站",
+                                    "station_id": "station_原武站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "100000",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_100000",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "1",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "2",
+                                    "element": "100300",
+                                    "name": "原武14开关",
+                                    "station": "原武站",
+                                    "station_id": "station_原武站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "100300",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_100300",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "2",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "2",
+                                    "element": "100387",
+                                    "name": "原武16开关",
+                                    "station": "原武站",
+                                    "station_id": "station_原武站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "100387",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_100387",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "3",
+                                    "device_type": "switch-liaison",
+                                    "is_virtual": false,
+                                    "show_type": "开关",
+                                    "bus": "2",
+                                    "element": "100414",
+                                    "name": "原武15开关",
+                                    "station": "原武站",
+                                    "station_id": "station_原武站",
+                                    "et": "b",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "100414",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "bus_100414",
+                                            "station": "",
+                                            "station_id": "",
+                                            "vn_kv": null,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "6",
+                                    "device_type": "load",
+                                    "is_virtual": false,
+                                    "show_type": "负荷",
+                                    "bus": "2",
+                                    "ini_p_mw": 0.0344176,
+                                    "max_p_mw": 0.0344176,
+                                    "name": "原武站.原武5#1站用变负荷",
+                                    "station": "原武站",
+                                    "station_id": "station_原武站",
+                                    "sub_devices": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "total_devices": 95
+}
