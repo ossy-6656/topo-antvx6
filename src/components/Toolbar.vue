@@ -7,47 +7,19 @@
     <button class="btn" @click="$emit('zoom-to-fit')">适配屏幕</button>
     <button class="btn" @click="$emit('export-svg')">导出 SVG</button>
     <button class="btn" @click="$emit('export-xml')">导出 XML</button>
-    <button
-      class="btn btn-edit"
-      :class="{ active: isEditMode }"
-      @click="$emit('toggle-edit-mode')"
-    >
-      {{ isEditMode ? '退出编辑' : '编辑模式' }}
-    </button>
-    
-    <button
-      v-if="isEditMode"
-      class="btn btn-danger"
-      :class="{ active: isConnectMode }"
-      @click="$emit('toggle-connect-mode')"
-    >
-      {{ isConnectMode ? '取消连接' : '连接节点' }}
-    </button>
     <span id="status">{{ status }}</span>
-    <span
-      v-if="isConnectMode"
-      id="connectStatus"
-      class="connect-status"
-    >
-      {{ connectStatus }}
-    </span>
   </div>
 </template>
 
 <script setup>
 defineProps({
-  isEditMode: Boolean,
-  isConnectMode: Boolean,
-  status: String,
-  connectStatus: String
+  status: String
 })
 
 defineEmits([
   'zoom-to-fit',
   'export-svg',
-  'export-xml',
-  'toggle-edit-mode',
-  'toggle-connect-mode'
+  'export-xml'
 ])
 
 const handleFileUpload = (e) => {
@@ -131,27 +103,5 @@ const handleFileUpload = (e) => {
   color: #888;
   font-size: 12px;
   font-family: monospace;
-}
-
-/* 编辑模式按钮样式 */
-.btn-edit {
-  background: #ff9800;
-}
-.btn-edit.active {
-  background: #f57c00;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
-}
-
-.btn-danger {
-  background: #009688;
-}
-.btn-danger:hover {
-  background: #00796b;
-}
-
-.connect-status {
-  color: #ff9800;
-  font-size: 12px;
-  margin-left: 10px;
 }
 </style>
