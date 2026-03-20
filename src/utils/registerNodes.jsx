@@ -1,5 +1,5 @@
 import { CONFIG } from "./config.js";
-
+console.log(CONFIG.colors)
 // 注册X6自定义节点
 export function registerX6Nodes(X6) {
   // (1) 变压器-双绕组变压器图标(2个圆圈)
@@ -68,10 +68,10 @@ export function registerX6Nodes(X6) {
           return voltage === 220
             ? "#C000C0"
             : voltage === 110
-            ? "#008000"
+            ? CONFIG.colors[110]
             : voltage === 35
-            ? "#FFCC00"
-            : "#B94842";
+            ? CONFIG.colors[35]
+            : CONFIG.colors.default;
         },
         stroke: "none",
         rx: 0,
@@ -102,10 +102,10 @@ export function registerX6Nodes(X6) {
           return voltage === 220
             ? "#C000C0"
             : voltage === 110
-            ? "#008000"
+            ? CONFIG.colors[110]
             : voltage === 35
-            ? "#FFCC00"
-            : "#B94842";
+            ? CONFIG.colors[35]
+            : CONFIG.colors.default;
         },
         strokeWidth: 2,
         rx: 1,
@@ -135,10 +135,10 @@ export function registerX6Nodes(X6) {
           return voltage === 220
             ? "#C000C0"
             : voltage === 110
-            ? "#008000"
+            ? CONFIG.colors[110]
             : voltage === 35
-            ? "#FFCC00"
-            : "#B94842";
+            ? CONFIG.colors[35]
+            : CONFIG.colors.default;
         },
         stroke: "none",
       },

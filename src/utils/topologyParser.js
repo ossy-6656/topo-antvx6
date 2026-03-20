@@ -143,10 +143,8 @@ export class TopologyParser {
     // 6. 处理连线 (如果有父节点)
     if (parentId) {
       const parentNode = this.nodes.find(n => n.id === parentId)
-      const isSwitch = type === 'switch-liaison' || type === 'switch-section'
       const parentIsSwitch = parentNode && (parentNode.data.device_type === 'switch-liaison' || parentNode.data.device_type === 'switch-section')
-      let isTargetSwitch = isSwitch
-      let isSwitchToBus = parentIsSwitch && type === 'bus'
+      const isSwitchToBus = parentIsSwitch && type === 'bus'
       let edgeConfig = {
         source: parentId,
         target: id,
@@ -163,7 +161,7 @@ export class TopologyParser {
           line: {
             stroke: color,
             strokeWidth: 1.5,
-            targetMarker: isTargetSwitch ? null : { name: 'block', width: 6, height: 8, fill: color, stroke: 'none' },
+            targetMarker: null,
           },
         },
         avoidNodes: true,

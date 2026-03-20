@@ -180,6 +180,26 @@ const renderData = (jsonContent) => {
         }
       }
     })
+    // 母线有子节点时，在母线正中间加一个圆点
+    const DOT_R = 4
+    data.nodes.forEach(busNode => {
+      if (busNode.shape !== 'rect' || busNode.data?.device_type !== 'bus') return
+      const hasChild = data.edges.some(e => e.source === busNode.id)
+      if (!hasChild) return
+      const dotCX = busNode.x + busNode.width / 2
+      const dotCY = busNode.y + busNode.height / 2
+      data.nodes.push({
+        id: `dot_center_${busNode.id}`,
+        shape: 'circle',
+        x: dotCX - DOT_R,
+        y: dotCY - DOT_R,
+        width: DOT_R * 2,
+        height: DOT_R * 2,
+        attrs: { body: { fill: busNode.data.color, stroke: 'none' } },
+        zIndex: 10,
+      })
+    })
+
     // 绘制
     graph.clearCells()
     graph.fromJSON(data)
