@@ -134,7 +134,8 @@ const renderData = (jsonContent) => {
               fill: '#fff',
               fontSize: 10,
               textAnchor: 'middle',
-              textVerticalAnchor: 'middle'
+              textVerticalAnchor: 'middle',
+              fontFamily: 'SimSun, serif'
             }
           }
         }

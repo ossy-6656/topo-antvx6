@@ -24,6 +24,7 @@ export function registerX6Nodes(X6) {
         textAnchor: "start",
         refX: 65,
         refY: "50%",
+        fontFamily: "SimSun, serif",
       },
     },
   });
@@ -52,6 +53,7 @@ export function registerX6Nodes(X6) {
         textAnchor: "start",
         refX: 65,
         refY: "50%",
+        fontFamily: "SimSun, serif",
       },
     },
   });
@@ -84,7 +86,7 @@ export function registerX6Nodes(X6) {
         refX: 7,
         textAnchor: "middle",
         lineHeight: 12,
-        fontFamily: "Arial",
+        fontFamily: "SimSun, serif",
       },
     },
   });
@@ -118,7 +120,7 @@ export function registerX6Nodes(X6) {
         refX: 7,
         textAnchor: "middle",
         lineHeight: 12,
-        fontFamily: "Arial",
+        fontFamily: "SimSun, serif",
       },
     },
   });
@@ -148,6 +150,7 @@ export function registerX6Nodes(X6) {
         refY: 15,
         refX: 8,
         textAnchor: "start",
+        fontFamily: "SimSun, serif",
         style: {
           writingMode: "vertical-rl",
           textOrientation: "mixed",

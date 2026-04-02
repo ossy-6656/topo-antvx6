@@ -59,9 +59,9 @@ export class TopologyParser {
         node.shape = 'leaf-terminal'
         node.width = CONFIG.nodeSize.leafBus.width
         node.height = CONFIG.nodeSize.leafBus.height
-        node.attrs = { body: { fill: color }, label: { text: label } }
+        node.attrs = { body: { fill: color }, label: { text: label, fontFamily: 'SimSun, serif' } }
         if (device.name && device.name.includes('虚拟')) {
-          node.attrs = { body: { fill: CONFIG.colors.virtual }, label: { text: label } }
+          node.attrs = { body: { fill: CONFIG.colors.virtual }, label: { text: label, fontFamily: 'SimSun, serif' } }
         }
       } else {
         node.shape = 'rect'
@@ -69,7 +69,7 @@ export class TopologyParser {
         node.height = CONFIG.nodeSize.topBus.height
         node.attrs = {
           body: { fill: color, stroke: 'none' },
-          label: { text: label, fill: '#fff', fontSize: 14, fontWeight: 'bold', refY: 25, textAnchor: 'start' },
+          label: { text: label, fill: '#fff', fontSize: 14, fontWeight: 'bold', refY: 25, textAnchor: 'start', fontFamily: 'SimSun, serif' },
         }
       }
     } else if (type === 'trafo-dual-winding') {
@@ -85,6 +85,7 @@ export class TopologyParser {
             refX: -12,
             refY: 65,
             textAnchor: 'start',
+            fontFamily: 'SimSun, serif'
           }
         }
       } else if (type === 'trafo-three-winding') {
@@ -100,6 +101,7 @@ export class TopologyParser {
           refX: -12,
           refY: 65,
           textAnchor: 'start',
+          fontFamily: 'SimSun, serif'
         }
       }
     } else if (type === 'switch-liaison') {
@@ -108,7 +110,7 @@ export class TopologyParser {
       node.height = CONFIG.nodeSize.switch.height
       node.attrs = {
         body: { fill: color },
-        label: { text: label, fill: '#fff', fontSize: 11, refX: 22, refY: 0, textAnchor: 'start', transform: 'rotate(90)' },
+        label: { text: label, fill: '#fff', fontSize: 11, refX: 22, refY: 0, textAnchor: 'start', transform: 'rotate(90)', fontFamily: 'SimSun, serif' },
       }
     } else if (type === 'switch-section') {
         node.shape = 'switch-section'
@@ -116,7 +118,7 @@ export class TopologyParser {
         node.height = CONFIG.nodeSize.switch.height
         node.attrs = {
           body: { fill: 'none',stroke: color, strokeWidth: 2 },
-          label: { text: label, fill: '#fff', fontSize: 11, refX: 22, refY: 0, textAnchor: 'start', transform: 'rotate(90)' },
+          label: { text: label, fill: '#fff', fontSize: 11, refX: 22, refY: 0, textAnchor: 'start', transform: 'rotate(90)', fontFamily: 'SimSun, serif' },
         }
       } else if (type === 'load') {
       node.width = 35
@@ -129,6 +131,7 @@ export class TopologyParser {
           textAnchor: 'left',
           x: -20,
           y: 10,
+          fontFamily: 'SimSun, serif'
         },
       }
     } else {
