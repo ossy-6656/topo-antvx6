@@ -1,0 +1,741 @@
+{
+    "code": 1,
+    "message": "动态拓扑解析成功",
+    "root_bus": "0",
+    "substations": [
+        {
+            "station_id": "station_滨河站",
+            "station_name": "滨河站"
+        },
+        {
+            "station_id": "station_郑州_民生站",
+            "station_name": "郑州.民生站"
+        },
+        {
+            "station_id": "station_郑州_众旺站",
+            "station_name": "郑州.众旺站"
+        },
+        {
+            "station_id": "station_融城站",
+            "station_name": "融城站"
+        },
+        {
+            "station_id": "station_郑州_渭水站",
+            "station_name": "郑州.渭水站"
+        },
+        {
+            "station_id": "station_郑州_祭城站",
+            "station_name": "郑州.祭城站"
+        },
+        {
+            "station_id": "station_郑州_经北站",
+            "station_name": "郑州.经北站"
+        },
+        {
+            "station_id": "station_郑州_T10站",
+            "station_name": "郑州.T10站"
+        },
+        {
+            "station_id": "station_郑州_榆林站",
+            "station_name": "郑州.榆林站"
+        }
+    ],
+    "topology": [
+        {
+            "device_index": "0",
+            "device_type": "bus",
+            "is_virtual": false,
+            "show_type": "bus",
+            "name": "滨河站.230.2",
+            "station": "滨河站",
+            "station_id": "station_滨河站",
+            "vn_kv": 220.0,
+            "sub_devices": [
+                {
+                    "device_index": "0",
+                    "device_type": "trafo-three-winding",
+                    "is_virtual": false,
+                    "show_type": "三绕组主变",
+                    "hv_bus": "0",
+                    "mv_bus": "7",
+                    "lv_bus": "9",
+                    "name": "滨河站.滨#1主变",
+                    "station": "滨河站",
+                    "station_id": "station_滨河站",
+                    "sn_hv_mva": 180.0,
+                    "sn_mv_mva": 180.0,
+                    "sn_lv_mva": 90.0,
+                    "vn_kv": 220,
+                    "vn_mv_kv": 110,
+                    "vn_lv_kv": 10,
+                    "sub_devices": [
+                        {
+                            "device_index": "7",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "滨河站.115.2",
+                            "station": "滨河站",
+                            "station_id": "station_滨河站",
+                            "vn_kv": 110.0,
+                            "sub_devices": [
+                                {
+                                    "device_index": "0",
+                                    "device_type": "load",
+                                    "is_virtual": false,
+                                    "show_type": "负荷",
+                                    "bus": "7",
+                                    "ini_p_mw": 6.26171,
+                                    "max_p_mw": 6.26171,
+                                    "name": "滨河站.滨河站/110kV.Ⅰ滨河稼轩线",
+                                    "station": "滨河站",
+                                    "station_id": "station_滨河站",
+                                    "sub_devices": []
+                                },
+                                {
+                                    "device_index": "0",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "15",
+                                    "name": "Ⅱ滨祭线",
+                                    "station": "郑州.祭城站",
+                                    "station_id": "station_郑州_祭城站",
+                                    "length_km": 1.0,
+                                    "to_bus": "7",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "15",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.祭城站.115.5",
+                                            "station": "郑州.祭城站",
+                                            "station_id": "station_郑州_祭城站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "2",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "7",
+                                    "name": "滨河融城(滨河-T10)线",
+                                    "station": "滨河站",
+                                    "station_id": "station_滨河站",
+                                    "length_km": 1.0,
+                                    "to_bus": "19",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "19",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.T10站.115.35",
+                                            "station": "郑州.T10站",
+                                            "station_id": "station_郑州_T10站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "3",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "10",
+                                                    "name": "滨融渭水支线",
+                                                    "station": "郑州.渭水站",
+                                                    "station_id": "station_郑州_渭水站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "19",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "10",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.渭水站.115.2",
+                                                            "station": "郑州.渭水站",
+                                                            "station_id": "station_郑州_渭水站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "6",
+                                                                    "device_type": "trafo-three-winding",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "主变",
+                                                                    "hv_bus": "10",
+                                                                    "lv_bus": "11",
+                                                                    "name": "郑州.渭水站.渭#1主变",
+                                                                    "station": "郑州.渭水站",
+                                                                    "station_id": "station_郑州_渭水站",
+                                                                    "sn_mva": 40.0,
+                                                                    "vn_kv": 110,
+                                                                    "vn_lv_kv": 10.0,
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "11",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "郑州.渭水站.10.2",
+                                                                            "station": "郑州.渭水站",
+                                                                            "station_id": "station_郑州_渭水站",
+                                                                            "vn_kv": 10.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "1",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "11",
+                                                                                    "ini_p_mw": -0.0125963,
+                                                                                    "max_p_mw": 0.001,
+                                                                                    "name": "郑州.渭水站.渭#1接地变",
+                                                                                    "station": "郑州.渭水站",
+                                                                                    "station_id": "station_郑州_渭水站",
+                                                                                    "sub_devices": []
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "3",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "11",
+                                                                                    "ini_p_mw": -0.0125963,
+                                                                                    "max_p_mw": 0.001,
+                                                                                    "name": "郑州.渭水站.渭#1站用变",
+                                                                                    "station": "郑州.渭水站",
+                                                                                    "station_id": "station_郑州_渭水站",
+                                                                                    "sub_devices": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "device_index": "7",
+                                                                    "device_type": "trafo-three-winding",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "主变",
+                                                                    "hv_bus": "10",
+                                                                    "lv_bus": "12",
+                                                                    "name": "郑州.渭水站.渭#2主变",
+                                                                    "station": "郑州.渭水站",
+                                                                    "station_id": "station_郑州_渭水站",
+                                                                    "sn_mva": 40.0,
+                                                                    "vn_kv": 110,
+                                                                    "vn_lv_kv": 10.0,
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "12",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "郑州.渭水站.10.3",
+                                                                            "station": "郑州.渭水站",
+                                                                            "station_id": "station_郑州_渭水站",
+                                                                            "vn_kv": 10.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "2",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "12",
+                                                                                    "ini_p_mw": -0.0173198,
+                                                                                    "max_p_mw": 0.001,
+                                                                                    "name": "郑州.渭水站.渭38#2接地变负荷",
+                                                                                    "station": "郑州.渭水站",
+                                                                                    "station_id": "station_郑州_渭水站",
+                                                                                    "sub_devices": []
+                                                                                },
+                                                                                {
+                                                                                    "device_index": "4",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "12",
+                                                                                    "ini_p_mw": -0.0173198,
+                                                                                    "max_p_mw": 0.001,
+                                                                                    "name": "郑州.渭水站.渭#2站用变",
+                                                                                    "station": "郑州.渭水站",
+                                                                                    "station_id": "station_郑州_渭水站",
+                                                                                    "sub_devices": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "device_index": "4",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "8",
+                                                    "name": "滨河融城(融城-T10)线",
+                                                    "station": "融城站",
+                                                    "station_id": "station_融城站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "19",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "8",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "融城站.115.4",
+                                                            "station": "融城站",
+                                                            "station_id": "station_融城站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "5",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "14",
+                                    "name": "Ⅰ滨祭线",
+                                    "station": "郑州.祭城站",
+                                    "station_id": "station_郑州_祭城站",
+                                    "length_km": 1.0,
+                                    "to_bus": "7",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "14",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.祭城站.115.3",
+                                            "station": "郑州.祭城站",
+                                            "station_id": "station_郑州_祭城站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "6",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "7",
+                                    "name": "Ⅰ滨经(滨河-T10)线",
+                                    "station": "滨河站",
+                                    "station_id": "station_滨河站",
+                                    "length_km": 1.0,
+                                    "to_bus": "18",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "18",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.T10站.115.24",
+                                            "station": "郑州.T10站",
+                                            "station_id": "station_郑州_T10站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "1",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "16",
+                                                    "name": "Ⅰ滨经(经北-T10)线",
+                                                    "station": "郑州.经北站",
+                                                    "station_id": "station_郑州_经北站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "18",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "16",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.经北站.115.2",
+                                                            "station": "郑州.经北站",
+                                                            "station_id": "station_郑州_经北站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "8",
+                                                                    "device_type": "trafo-three-winding",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "主变",
+                                                                    "hv_bus": "16",
+                                                                    "lv_bus": "17",
+                                                                    "name": "郑州.经北站.经#1主变",
+                                                                    "station": "郑州.经北站",
+                                                                    "station_id": "station_郑州_经北站",
+                                                                    "sn_mva": 63.0,
+                                                                    "vn_kv": 110,
+                                                                    "vn_lv_kv": 10.0,
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "17",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "郑州.经北站.10.2",
+                                                                            "station": "郑州.经北站",
+                                                                            "station_id": "station_郑州_经北站",
+                                                                            "vn_kv": 10.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "5",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "17",
+                                                                                    "ini_p_mw": 0.0103725,
+                                                                                    "max_p_mw": 0.0103725,
+                                                                                    "name": "郑州.经北站.经#1站用变",
+                                                                                    "station": "郑州.经北站",
+                                                                                    "station_id": "station_郑州_经北站",
+                                                                                    "sub_devices": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "device_index": "7",
+                                                    "device_type": "ac_line",
+                                                    "is_virtual": false,
+                                                    "show_type": "线路",
+                                                    "from_bus": "20",
+                                                    "name": "Ⅰ滨经榆林支线",
+                                                    "station": "郑州.榆林站",
+                                                    "station_id": "station_郑州_榆林站",
+                                                    "length_km": 1.0,
+                                                    "to_bus": "18",
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "20",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.榆林站.115.2",
+                                                            "station": "郑州.榆林站",
+                                                            "station_id": "station_郑州_榆林站",
+                                                            "vn_kv": 110.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "9",
+                                                                    "device_type": "trafo-three-winding",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "主变",
+                                                                    "hv_bus": "20",
+                                                                    "lv_bus": "21",
+                                                                    "name": "郑州.榆林站.榆林#1主变",
+                                                                    "station": "郑州.榆林站",
+                                                                    "station_id": "station_郑州_榆林站",
+                                                                    "sn_mva": 63.0,
+                                                                    "vn_kv": 110,
+                                                                    "vn_lv_kv": 10.0,
+                                                                    "sub_devices": [
+                                                                        {
+                                                                            "device_index": "21",
+                                                                            "device_type": "bus",
+                                                                            "is_virtual": false,
+                                                                            "show_type": "bus",
+                                                                            "name": "郑州.榆林站.10.3",
+                                                                            "station": "郑州.榆林站",
+                                                                            "station_id": "station_郑州_榆林站",
+                                                                            "vn_kv": 10.0,
+                                                                            "sub_devices": [
+                                                                                {
+                                                                                    "device_index": "6",
+                                                                                    "device_type": "load",
+                                                                                    "is_virtual": false,
+                                                                                    "show_type": "负荷",
+                                                                                    "bus": "21",
+                                                                                    "ini_p_mw": 0.0840702,
+                                                                                    "max_p_mw": 0.0840702,
+                                                                                    "name": "郑州.榆林站.榆林#1接地变",
+                                                                                    "station": "郑州.榆林站",
+                                                                                    "station_id": "station_郑州_榆林站",
+                                                                                    "sub_devices": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "8",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "7",
+                                    "name": "Ⅰ滨河民生线",
+                                    "station": "滨河站",
+                                    "station_id": "station_滨河站",
+                                    "length_km": 1.0,
+                                    "to_bus": "1",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "1",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.民生站.115.2",
+                                            "station": "郑州.民生站",
+                                            "station_id": "station_郑州_民生站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "10",
+                                                    "device_type": "trafo-three-winding",
+                                                    "is_virtual": false,
+                                                    "show_type": "主变",
+                                                    "hv_bus": "1",
+                                                    "lv_bus": "3",
+                                                    "name": "郑州.民生站.民生#1主变",
+                                                    "station": "郑州.民生站",
+                                                    "station_id": "station_郑州_民生站",
+                                                    "sn_mva": 63.0,
+                                                    "vn_kv": 110,
+                                                    "vn_lv_kv": 10.0,
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "3",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.民生站.10.2",
+                                                            "station": "郑州.民生站",
+                                                            "station_id": "station_郑州_民生站",
+                                                            "vn_kv": 10.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "7",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "3",
+                                                                    "ini_p_mw": 0.014545,
+                                                                    "max_p_mw": 0.014545,
+                                                                    "name": "郑州.民生站.民生3#1接地变负荷",
+                                                                    "station": "郑州.民生站",
+                                                                    "station_id": "station_郑州_民生站",
+                                                                    "sub_devices": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "9",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "7",
+                                    "name": "Ⅱ滨河民生线",
+                                    "station": "滨河站",
+                                    "station_id": "station_滨河站",
+                                    "length_km": 1.0,
+                                    "to_bus": "2",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "2",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.民生站.115.3",
+                                            "station": "郑州.民生站",
+                                            "station_id": "station_郑州_民生站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "11",
+                                                    "device_type": "trafo-three-winding",
+                                                    "is_virtual": false,
+                                                    "show_type": "主变",
+                                                    "hv_bus": "2",
+                                                    "lv_bus": "4",
+                                                    "name": "郑州.民生站.民生#2主变",
+                                                    "station": "郑州.民生站",
+                                                    "station_id": "station_郑州_民生站",
+                                                    "sn_mva": 63.0,
+                                                    "vn_kv": 110,
+                                                    "vn_lv_kv": 10.0,
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "4",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.民生站.10.3",
+                                                            "station": "郑州.民生站",
+                                                            "station_id": "station_郑州_民生站",
+                                                            "vn_kv": 10.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "8",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "4",
+                                                                    "ini_p_mw": 0.00157505,
+                                                                    "max_p_mw": 0.00157505,
+                                                                    "name": "郑州.民生站.民生36#2接地变负荷",
+                                                                    "station": "郑州.民生站",
+                                                                    "station_id": "station_郑州_民生站",
+                                                                    "sub_devices": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "device_index": "10",
+                                    "device_type": "ac_line",
+                                    "is_virtual": false,
+                                    "show_type": "线路",
+                                    "from_bus": "7",
+                                    "name": "滨河众旺线",
+                                    "station": "滨河站",
+                                    "station_id": "station_滨河站",
+                                    "length_km": 1.0,
+                                    "to_bus": "5",
+                                    "sub_devices": [
+                                        {
+                                            "device_index": "5",
+                                            "device_type": "bus",
+                                            "is_virtual": false,
+                                            "show_type": "bus",
+                                            "name": "郑州.众旺站.115.2",
+                                            "station": "郑州.众旺站",
+                                            "station_id": "station_郑州_众旺站",
+                                            "vn_kv": 110.0,
+                                            "sub_devices": [
+                                                {
+                                                    "device_index": "12",
+                                                    "device_type": "trafo-three-winding",
+                                                    "is_virtual": false,
+                                                    "show_type": "主变",
+                                                    "hv_bus": "5",
+                                                    "lv_bus": "6",
+                                                    "name": "郑州.众旺站.众旺#1主变",
+                                                    "station": "郑州.众旺站",
+                                                    "station_id": "station_郑州_众旺站",
+                                                    "sn_mva": 63.0,
+                                                    "vn_kv": 110,
+                                                    "vn_lv_kv": 10.0,
+                                                    "sub_devices": [
+                                                        {
+                                                            "device_index": "6",
+                                                            "device_type": "bus",
+                                                            "is_virtual": false,
+                                                            "show_type": "bus",
+                                                            "name": "郑州.众旺站.10.2",
+                                                            "station": "郑州.众旺站",
+                                                            "station_id": "station_郑州_众旺站",
+                                                            "vn_kv": 10.0,
+                                                            "sub_devices": [
+                                                                {
+                                                                    "device_index": "9",
+                                                                    "device_type": "load",
+                                                                    "is_virtual": false,
+                                                                    "show_type": "负荷",
+                                                                    "bus": "6",
+                                                                    "ini_p_mw": 0.00407826,
+                                                                    "max_p_mw": 0.00407826,
+                                                                    "name": "郑州.众旺站.众旺1#1站用变负荷",
+                                                                    "station": "郑州.众旺站",
+                                                                    "station_id": "station_郑州_众旺站",
+                                                                    "sub_devices": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "device_index": "9",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "滨河站.10.3",
+                            "station": "滨河站",
+                            "station_id": "station_滨河站",
+                            "vn_kv": 10.0,
+                            "sub_devices": []
+                        }
+                    ]
+                },
+                {
+                    "device_index": "1",
+                    "device_type": "trafo-three-winding",
+                    "is_virtual": false,
+                    "show_type": "三绕组主变",
+                    "hv_bus": "0",
+                    "mv_bus": "7",
+                    "lv_bus": "13",
+                    "name": "滨河站.滨#2主变",
+                    "station": "滨河站",
+                    "station_id": "station_滨河站",
+                    "sn_hv_mva": 180.0,
+                    "sn_mv_mva": 180.0,
+                    "sn_lv_mva": 90.0,
+                    "vn_kv": 220,
+                    "vn_mv_kv": 110,
+                    "vn_lv_kv": 10,
+                    "sub_devices": [
+                        {
+                            "device_index": "13",
+                            "device_type": "bus",
+                            "is_virtual": false,
+                            "show_type": "bus",
+                            "name": "滨河站.10.4",
+                            "station": "滨河站",
+                            "station_id": "station_滨河站",
+                            "vn_kv": 10.0,
+                            "sub_devices": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "total_devices": 52
+}
