@@ -71,7 +71,7 @@ const handleFileUpload = (e) => {
 /* 顶部工具栏 */
 #toolbar {
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 0;
   width: 100%;
   height: 50px;
@@ -80,7 +80,7 @@ const handleFileUpload = (e) => {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  z-index: 100;
+  z-index: 99;
 }
 
 /* 文件上传按钮美化 */

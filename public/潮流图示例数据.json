@@ -1,0 +1,158 @@
+{
+  "nodes": [
+    {
+      "id": "node1",
+      "type": "power-plant",
+      "name": "发电厂A",
+      "p": 200,
+      "q": 50,
+      "voltage": 220
+    },
+    {
+      "id": "node2",
+      "type": "power-plant",
+      "name": "发电厂B",
+      "p": 150,
+      "q": 30,
+      "voltage": 220
+    },
+    {
+      "id": "node3",
+      "type": "substation",
+      "name": "变电站1",
+      "p": 0,
+      "q": 0,
+      "voltage": 220
+    },
+    {
+      "id": "node4",
+      "type": "substation",
+      "name": "变电站2",
+      "p": 0,
+      "q": 0,
+      "voltage": 110
+    },
+    {
+      "id": "node5",
+      "type": "substation",
+      "name": "变电站3",
+      "p": 0,
+      "q": 0,
+      "voltage": 110
+    },
+    {
+      "id": "node6",
+      "type": "load",
+      "name": "负荷1",
+      "p": -100,
+      "q": -30,
+      "voltage": 35
+    },
+    {
+      "id": "node7",
+      "type": "load",
+      "name": "负荷2",
+      "p": -120,
+      "q": -40,
+      "voltage": 35
+    },
+    {
+      "id": "node8",
+      "type": "load",
+      "name": "负荷3",
+      "p": -80,
+      "q": -20,
+      "voltage": 35
+    },
+    {
+      "id": "node9",
+      "type": "bus",
+      "name": "母线1",
+      "voltage": 220
+    },
+    {
+      "id": "node10",
+      "type": "bus",
+      "name": "母线2",
+      "voltage": 110
+    },
+    {
+      "id": "node11",
+      "type": "bus",
+      "name": "母线3",
+      "voltage": 110
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "source": "node1",
+      "target": "node9",
+      "name": "线路1",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "edge2",
+      "source": "node2",
+      "target": "node9",
+      "name": "线路2",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "edge3",
+      "source": "node9",
+      "target": "node3",
+      "name": "线路3",
+      "color": "#2196F3"
+    },
+    {
+      "id": "edge4",
+      "source": "node3",
+      "target": "node10",
+      "name": "线路4",
+      "color": "#2196F3"
+    },
+    {
+      "id": "edge5",
+      "source": "node3",
+      "target": "node11",
+      "name": "线路5",
+      "color": "#2196F3"
+    },
+    {
+      "id": "edge6",
+      "source": "node10",
+      "target": "node4",
+      "name": "线路6",
+      "color": "#2196F3"
+    },
+    {
+      "id": "edge7",
+      "source": "node11",
+      "target": "node5",
+      "name": "线路7",
+      "color": "#2196F3"
+    },
+    {
+      "id": "edge8",
+      "source": "node4",
+      "target": "node6",
+      "name": "线路8",
+      "color": "#FF9800"
+    },
+    {
+      "id": "edge9",
+      "source": "node4",
+      "target": "node7",
+      "name": "线路9",
+      "color": "#FF9800"
+    },
+    {
+      "id": "edge10",
+      "source": "node5",
+      "target": "node8",
+      "name": "线路10",
+      "color": "#FF9800"
+    }
+  ]
+}
